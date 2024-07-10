@@ -35,5 +35,12 @@ const skills: string[] = ["HTML", "CSS", "JavaScript/Typescript", "React", "Astr
     <p>Soy {identity.occupation}</p>
     <p>Me gusta mucho leer, escuchar musica, deportes de cardio y conocer personas y la manera en que perciben al mundo</p>
     <p>Trato de seguir aprendiendo y creciendo un poquito más cada día</p>
+
+    <p>Mis conocimientos</p>
+    <ul>
+      {skills.map((skill) => 
+        <li>{skill}</li>
+      )}
+    </ul>
 	</body>
 </html>
