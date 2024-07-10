@@ -1,5 +1,21 @@
 ---
+const pageTitle: string ='Sobre mi'
 
+interface Identity {
+  firstName: string;
+  country: string;
+  occupation: string;
+  hobbies: string[];
+}
+
+const identity: Identity = {
+  firstName: "Andrés",
+  country: "Mexico",
+  occupation: "ingeniero en sistemas computacionales",
+  hobbies: ["correr", "box", "leer", "senderismo"],
+};
+
+const skills: string[] = ["HTML", "CSS", "JavaScript/Typescript", "React", "Astro", "Go", "Python", "linux", "sql", "mongo"];
 ---
 
 <html lang="en">
@@ -8,15 +24,15 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Sobre mi</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
     <a href="/">Casa</a>
     <a href="/bio">Bio</a>
     <a href="/blogs">Blogs</a>
 
-		<h1>Sobre mi</h1>
-    <p>Soy un ingeniero en sistemas computaciones.</p>
+		<h1>{pageTitle}</h1>
+    <p>Soy {identity.occupation}</p>
     <p>Me gusta mucho leer, escuchar musica, deportes de cardio y conocer personas y la manera en que perciben al mundo</p>
     <p>Trato de seguir aprendiendo y creciendo un poquito más cada día</p>
 	</body>
