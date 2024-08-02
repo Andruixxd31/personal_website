@@ -1,5 +1,6 @@
 ---
-const pageTitle: string ='Sobre mi'
+import '../styles/global.css';
+const pageTitle: string ='Sobre mi';
 
 interface Identity {
   firstName: string;
@@ -16,6 +17,7 @@ const identity: Identity = {
 };
 
 const skills: string[] = ["HTML", "CSS", "JavaScript/Typescript", "React", "Astro", "Go", "Python", "linux", "sql", "mongo"];
+const skillColor: string = "navy";
 ---
 
 <html lang="en">
@@ -25,6 +27,12 @@ const skills: string[] = ["HTML", "CSS", "JavaScript/Typescript", "React", "Astr
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+    <style define:vars={{skillColor}}>
+      .skill {
+        color: var(--skillColor);
+        font-weight: bold;
+      }
+    </style>
 	</head>
 	<body>
     <a href="/">Casa</a>
@@ -39,7 +47,7 @@ const skills: string[] = ["HTML", "CSS", "JavaScript/Typescript", "React", "Astr
     <p>Mis conocimientos</p>
     <ul>
       {skills.map((skill) => 
-        <li>{skill}</li>
+        <li class="skill">{skill}</li>
       )}
     </ul>
 	</body>
