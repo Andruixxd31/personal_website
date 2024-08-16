@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle: string ='Sobre mi';
 
@@ -22,23 +22,13 @@ const skills: string[] = ["HTML", "CSS", "JavaScript/Typescript", "React", "Astr
 const skillColor: string = "navy";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-    <style define:vars={{skillColor}}>
-      .skill {
-        color: var(--skillColor);
-        font-weight: bold;
-      }
-    </style>
-	</head>
-	<body>
-    <Navigation/>
-		<h1>{pageTitle}</h1>
+  <style define:vars={{skillColor}}>
+    .skill {
+      color: var(--skillColor);
+      font-weight: bold;
+    }
+  </style>
+  <BaseLayout pageTitle={pageTitle}>
     <p>Soy {identity.occupation}</p>
     <p>Me gusta mucho leer, escuchar musica, deportes de cardio y conocer personas y la manera en que perciben al mundo</p>
     <p>Trato de seguir aprendiendo y creciendo un poquito más cada día</p>
@@ -49,5 +39,4 @@ const skillColor: string = "navy";
         <li class="skill">{skill}</li>
       )}
     </ul>
-	</body>
-</html>
+  </BaseLayout>
