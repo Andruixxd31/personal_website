@@ -1,17 +1,11 @@
 ---
-title: "Mi Primera Publicación"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: "Mi Primera Blog"
 pubDate: 2024-07-09
 description: "Este es mi primer blog"
 author: "Andrés Díaz de León"
-image:
-  url: "https://docs.astro.build/assets/rose.webp"
-  alt: "The Astro logo on a dark background with a pink glow."
 tags: ["astro", "blogging"]
 ---
-
-# Mi Primer Blog
-
-Published on: 2024-07-09
 
 Quiero que este sea el inicio de un blog donde pueda escribir sobre lo que he estado aprendiendo, reflexionando y viviendo en mi vida.
 Veo una importancia en poder digerir los sucesos de mi vida en vez de solo reaccionar a ellos.
