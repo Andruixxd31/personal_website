@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "Mi Primera Blog"
+title: "Mi Primer Blog"
 pubDate: 2024-07-09
 description: "Este es mi primer blog"
 author: "Andrés Díaz de León"
-tags: ["astro", "blogging"]
+etiquetas: ["astro", "blogging"]
 ---
 
 Quiero que este sea el inicio de un blog donde pueda escribir sobre lo que he estado aprendiendo, reflexionando y viviendo en mi vida.
