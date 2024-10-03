@@ -31,14 +31,14 @@ h1 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #ff9776;
+  background-color: #ff6200;
 }
 
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
+  background-color: #a200ff;
   display: none;
   margin: 0;
 }
@@ -51,11 +51,13 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #b616c7;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: #ff6200;
+  color: #1117d6;
 }
 
 .expanded {
@@ -64,8 +66,8 @@ h1 {
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     position: static;
     width: auto;
     background: none;
